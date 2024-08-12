@@ -1,0 +1,55 @@
+mutation CreateCategory {
+  CreateCategory(input: {
+    categoryid: "Vehicles"
+  }) {
+    categoryid
+  }
+}
+
+mutation ListCategories {
+  listCategories {id}
+}
+
+mutation DeleteCategory {
+  DeleteCategory(input: {
+    categoryid: "Vehicles"
+  }) {
+    categoryid
+  }
+}
+
+mutation EditCategory {
+  EditCategory(input: {
+    categoryid: "Vehicles",
+    newid: "Vehicular",
+  }) {
+    categoryid
+  }
+}
+
+mutation CreateSubCategory {
+  CreateSubCategory(input: {
+    categoryid: "Vehicles", 
+    subcategoryid: "Lexus"}) {
+  	categoryid, 
+    subcategoryid}
+}
+
+mutation DeleteSubCategory {
+  DeleteSubCategory(input: {
+    subcategoryid: "PC Components"
+  }) {
+    subcategoryid
+  }
+}
+
+mutation EditSubCategory {
+  EditSubCategory(input: {
+    subcategoryid: "Cars & Trucks",
+    newid: "Vans & Buses"
+  }) {
+    categoryid
+    subcategoryid
+  }
+}
+

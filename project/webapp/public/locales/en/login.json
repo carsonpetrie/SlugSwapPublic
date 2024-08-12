@@ -1,0 +1,10 @@
+{
+  "change-locale": "Change locale to \"{{changeTo}}\"",
+  "login": "Log In",
+  "email": "Email Address",
+  "password": "Password",
+  "remember": "Remember me",
+  "cancel": "Cancel",
+  "signup": "Don't have an account? Sign Up",
+  "error": "Error logging in, please try again"
+}

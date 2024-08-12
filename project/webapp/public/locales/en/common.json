@@ -1,0 +1,50 @@
+{
+  "title": "SlugSwap",
+  "change-locale": "Change locale to \"{{changeTo}}\"",
+  "menu": {
+    "login": "Login",
+    "profile": "Profile",
+    "signup": "Sign Up",
+    "logout": "Logout",
+    "options": "Menu Options",
+    "account": "Your Account",
+    "settings": "Settings"
+  },
+  "ln": "Switch to Spanish",
+  "search": "Search",
+  "user": {
+    "member-since": "MEMBER SINCE"
+  },
+  "listing": {
+    "next": "Next",
+    "back": "Back",
+    "this-listing": "This listing was posted in",
+    "category": "category",
+    "purchase-now": "Purchase Now",
+    "purchase-now-guest": "Sign up to Purchase Item",
+    "contact-seller": "Contact Seller",
+    "contact-seller-guest": "Login in to Contact Seller",
+    "posted-on": "Posted on",
+    "description": "Description",
+    "seller": "Seller"
+  },
+  "cl": {
+    "new": "New Listing",
+    "create": "Create Listing",
+    "title": "Title",
+    "description": "Description",
+    "price": "Price",
+    "example": "Example",
+    "select-cat": "Select Category",
+    "select-subcat": "Select Subcategory",
+    "select-help": "Select the category",
+    "select-subhelp": "Select the subcategory",
+    "post": "Post Listing"
+  },
+  "All": "All",
+  "Vehicles": "Vehicles",
+  "Computers": "Computers",  
+  "d": {
+    "desc": "Drag 'n' drop some files here, or click to select files"
+  }
+}

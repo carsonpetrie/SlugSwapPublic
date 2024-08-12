@@ -1,0 +1,50 @@
+{
+  "title": "SlugSwap",
+  "change-locale": "Cambiar configuración regional a \"{{changeTo}}\"",
+  "menu": {
+    "login": "Iniciar sesión",
+    "profile": "Perfil",
+    "signup": "Inscribirse",
+    "logout": "Cerrar sesión",
+    "options": "Opciones de Menú",
+    "account": "Su Cuenta",
+    "settings": "Ajustes"
+  },
+  "ln": "Cambiar a Inglés",
+  "search": "Buscar",
+  "user": {
+    "member-since": "MIEMBRO DESDE"
+  },
+  "listing": {
+    "next": "Próximo",
+    "back": "Atrás",
+    "this-listing": "Este listado fue publicado en",
+    "category": "categoría",
+    "purchase-now": "Comprar Ahora",
+    "purchase-now-guest": "Regístrese para Comprar Ahora",
+    "contact-seller": "Contacte al vendedor",
+    "contact-seller-guest": "Inicie sesión para ponerse en contacto con el vendedor",
+    "posted-on": "Publicado en",
+    "description": "Descripción",
+    "seller": "Vendedor"
+  },
+  "cl": {
+    "new": "Nuevo Listado",
+    "create": "Crear Listado",
+    "title": "Título",
+    "description": "Descripción",
+    "price": "Precio",
+    "example": "Ejemplo",
+    "select-cat": "Seleccionar Categoría",
+    "select-subcat": "Seleccionar Subcategoría",
+    "select-help": "Seleccione la Categoría",
+    "select-subhelp": "Seleccione la Subcategoría",
+    "post": "Publicar Listado"
+  },
+  "All": "Todo",
+  "Vehicles": "Vehículos",
+  "Computers": "Ordenadores",
+  "d": {
+    "desc": "Arrastre y suelte algunos archivos aquí, o haga clic para seleccionar archivos"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "change-locale": "Cambiar configuración regional a \"{{changeTo}}\"",
+  "signup": "Inscribirse",
+  "username": "Nombre de usuario",
+  "email": "Dirección de correo electrónico",
+  "password": "Contraseña",
+  "cancel": "Cancelar",
+  "login": "¿Ya tienes una cuenta? Acceso",
+  "error": "Error al crear la cuenta, inténtalo de nuevo"
+}

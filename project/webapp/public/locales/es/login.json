@@ -1,0 +1,10 @@
+{
+  "change-locale": "Cambiar configuración regional a \"{{changeTo}}\"",
+  "login": "Iniciar Sesión",
+  "email": "Dirección de correo electrónico",
+  "password": "Contraseña",
+  "remember": "Acuérdate de mí",
+  "cancel": "Cancelar",
+  "signup": "¿No tienes una cuenta? Inscribirse",
+  "error": "Error al iniciar sesión, inténtalo de nuevo"
+}

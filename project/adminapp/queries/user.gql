@@ -1,0 +1,33 @@
+query GetUsers {
+  GetUsers {
+    userid
+    data {
+      name
+      avatar
+      roles
+      suspended
+    }
+  }
+}
+
+query GetUser {
+  GetUser(userid: "bb123912-09b9-4e25-9c9e-93ad397eee9d") {
+    name
+    avatar
+    description
+    roles
+    suspended
+  }
+}
+
+mutation DisableUser {
+  disableUser(input: {userid: "bb123912-09b9-4e25-9c9e-93ad397eee9d"}) {
+    userid
+  }
+}
+
+mutation EnableUser {
+  enableUser(input: {userid: "bb123912-09b9-4e25-9c9e-93ad397eee9d"}) {
+    userid
+  }
+}

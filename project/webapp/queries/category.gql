@@ -1,0 +1,11 @@
+mutation CreateCategory {
+  createCategory(input: {
+    id: "Cars"
+  }) {
+    id
+  }
+}
+
+mutation ListCategories {
+  listCategories {id}
+}

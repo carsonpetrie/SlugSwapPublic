@@ -1,0 +1,68 @@
+version: "3.7"
+services:
+  app:
+    container_name: app
+    env_file: .env
+    build: .
+    depends_on:
+      - postgres-account
+      - postgres-category
+      - postgres-listing
+      - postgres-message
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+      - "3002:3002"
+      - "3011:3011"
+
+  postgres-account:
+    container_name: database-account
+    image: postgres:15.2-alpine
+    environment:
+      PGPORT : 5433
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./AccountService/sql/databases.sql:/docker-entrypoint-initdb.d/1.databases.sql
+      - ./AccountService/sql/schema.sql:/docker-entrypoint-initdb.d/2.schema.sql
+      - ./AccountService/sql/data.sql:/docker-entrypoint-initdb.d/3.data.sql
+      
+  postgres-category:
+    container_name: database-category
+    image: postgres:15.2-alpine
+    environment:
+      PGPORT : 5434
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./CategoryService/sql/databases.sql:/docker-entrypoint-initdb.d/1.databases.sql
+      - ./CategoryService/sql/schema.sql:/docker-entrypoint-initdb.d/2.schema.sql
+      - ./CategoryService/sql/data.sql:/docker-entrypoint-initdb.d/3.data.sql
+
+  postgres-listing:
+    container_name: database-listing
+    image: postgres:15.2-alpine
+    environment:
+      PGPORT : 5435
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./ListingService/sql/databases.sql:/docker-entrypoint-initdb.d/1.databases.sql
+      - ./ListingService/sql/schema.sql:/docker-entrypoint-initdb.d/2.schema.sql
+      - ./ListingService/sql/data.sql:/docker-entrypoint-initdb.d/3.data.sql
+
+  postgres-message:
+    container_name: database-message
+    image: postgres:15.2-alpine
+    environment:
+      PGPORT : 5436
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./MessageService/sql/databases.sql:/docker-entrypoint-initdb.d/1.databases.sql
+      - ./MessageService/sql/schema.sql:/docker-entrypoint-initdb.d/2.schema.sql
+      - ./MessageService/sql/data.sql:/docker-entrypoint-initdb.d/3.data.sql
